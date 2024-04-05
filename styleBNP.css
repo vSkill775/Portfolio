@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+nav .logo {
+    width: 180px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    font-size: 16px; /* Correction de la taille de police */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Correction de la couleur du texte */
+    padding: 10px 20px;
+}
+
+.navbar:hover .sous-menu {
+    display: block;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0); /* Utilisation de la fonction rgba pour définir la couleur de fond avec une opacité */
+    padding: 10px 0; /* Correction du padding */
+    z-index: 1000;
+}
+
+.sous-menu li {
+    display: block;
+    margin: 10px 0;
+}
+
+.sous-menu li a {
+    color: #ffffff; /* Correction de la couleur du texte */
+    padding: 8px 20px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #cd141400;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.prenom {
+    text-align: center; /* Ajout de l'alignement du texte au centre */
+    color: #ffffff;
+}
+
+
+.text {
+    text-align: left; /* Ajout de l'alignement du texte au centre */
+    color: #000000;
+    line-height: 3.5;
+}
+
+.experience {
+    position: relative;
+    color: white;
+    top: -40px;
+}
+
+.titre {
+    position: relative;
+    top: 20px;
+}
+
+.entreprise {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    color: white;
+}
+
+.experience a {
+    color: rgb(255, 255, 255);
+}
+
+
+.experience a:hover {
+    color: red;
+}
+
+.liste {
+    position: relative;
+    color: white;
+    left: 20px;
+    top: 70px;
+}
+
+.photo {
+    position: relative;
+    top: 0px;
+    left: 80px;
+    width: 70%;
+    height: auto;
+}
+
+.rapport {
+    position: relative;
+    top: 90px;
+    left: 20px;
+    color: white;
+}
+
+
+.liste2 {
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.photo2 {
+    position: relative;
+    top: 200px;
+    left: -15px;
+    width: 80%;
+    height: auto;
+}
+
+video {
+    position: absolute;
+    width: 100%; /* Correction de la largeur de la vidéo */
+    height: 100%; /* Correction de la hauteur de la vidéo */
+    object-fit: cover; /* Pour s'assurer que la vidéo couvre toute la zone */
+    z-index: -1; /* Déplacer la vidéo derrière le contenu */
+}
